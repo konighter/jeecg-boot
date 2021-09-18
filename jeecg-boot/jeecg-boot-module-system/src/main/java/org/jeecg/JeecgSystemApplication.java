@@ -21,7 +21,7 @@ import java.net.UnknownHostException;
 * 单体启动类（采用此类启动为单体模式）
 */
 @Slf4j
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.hanzhan.tech", "org.jeecg"})
 public class JeecgSystemApplication extends SpringBootServletInitializer {
 
     @Override
