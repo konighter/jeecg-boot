@@ -73,9 +73,6 @@
           fileDetails:[
             {
               imgUrl:"https://static.jeecg.com/upload/test/3a4490d5d1cd495b826e528537a47cc1.jpg"
-            },
-            {
-              imgUrl:"https://static.jeecg.com/temp/国炬软件logo_1606575029126.png"
             }
           ]
         },{

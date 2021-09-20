@@ -4,8 +4,8 @@
       <div class="top">
         <div class="header">
           <a href="/">
-            <img src="~@/assets/logo.svg" class="logo" alt="logo">
-            <span class="title">Jeecg Boot</span>
+            <img src="~@/assets/hz_logo_min.png" class="logo" alt="logo">
+            <span class="title">H&Z Console</span>
           </a>
         </div>
         <div class="desc">
