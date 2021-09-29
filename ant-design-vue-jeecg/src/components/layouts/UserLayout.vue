@@ -9,7 +9,6 @@
           </a>
         </div>
         <div class="desc">
-
         </div>
       </div>
 

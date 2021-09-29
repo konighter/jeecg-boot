@@ -34,6 +34,8 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
     private String webAppPath;
     @Value("${spring.resource.static-locations}")
     private String staticLocations;
+    @Value("${jeecg.path.index}")
+    private String indexPath;
 
     /**
      * 静态资源的配置 - 使得可以从磁盘中读取 Html、图片、视频、音频等
@@ -51,7 +53,7 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
      */
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("doc.html");
+        registry.addViewController("/").setViewName(indexPath);
     }
 
     @Bean

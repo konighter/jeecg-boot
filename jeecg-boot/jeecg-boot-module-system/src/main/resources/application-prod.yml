@@ -7,7 +7,7 @@ server:
     include-stacktrace: ALWAYS
     include-message: ALWAYS
   servlet:
-    context-path: /jeecg-boot
+    context-path:
   compression:
     enabled: true
     min-response-size: 1024
@@ -93,7 +93,7 @@ spring:
   mvc:
     static-path-pattern: /**
   resource:
-    static-locations: classpath:/static/,classpath:/public/
+    static-locations: classpath:/static/,classpath:/public/,classpath:/site/
   autoconfigure:
     exclude: com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure
   datasource:
@@ -183,6 +183,8 @@ jeecg :
     upload: /opt/jeecg-boot/upload
     #webapp文件路径
     webapp: /opt/jeecg-boot/webapp
+    #index
+    index: index.html
   shiro:
      excludeUrls: /testNew/*,/test/jeecgDemo/demo3,/test/jeecgDemo/redisDemo/**,/category/**,/visual/**,/map/**,/jmreport/bigscreen2/**,/api/getUserInfo
   #阿里云oss存储和大鱼短信秘钥配置

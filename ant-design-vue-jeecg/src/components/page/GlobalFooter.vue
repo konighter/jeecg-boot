@@ -1,12 +1,10 @@
 <template>
   <div class="footer">
     <div class="links">
-      <a href="" target="_blank">首页</a>
-      <a href="" target="_blank">
-        <a-icon type="github"/>
-      </a>
+      <a href="/" target="_blank">首页</a>
       <a href="https://ant.design/">Ant Design</a>
       <a href="https://vuecomponent.github.io/ant-design-vue/docs/vue/introduce-cn/">Vue Antd</a>
+      <a href="http://www.jeecg.com/">Jeecg-boot</a>
     </div>
     <div class="copyright">
       Copyright
