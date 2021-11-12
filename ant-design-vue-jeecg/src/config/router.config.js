@@ -323,30 +323,6 @@ export const constantRouterMap = [
     ]
   },
 
-  // {
-  //   path: '/',
-  //   name: 'index',
-  //   component: TabLayout,
-  //   meta: {title: '首页'},
-  //   redirect: '/dashboard/workplace',
-  //   children: [
-  //     {
-  //       path: '/online',
-  //       name: 'online',
-  //       redirect: '/online',
-  //       component: RouteView,
-  //       meta: {title: '在线开发', icon: 'dashboard', permission: ['dashboard']},
-  //       children: [
-  //         {
-  //           path: '/online/auto/:code',
-  //           name: 'report',
-  //           component: () => import('@/views/modules/online/cgreport/OnlCgreportAutoList')
-  //         },
-  //       ]
-  //     },
-  //   ]
-  // },
-
   {
     // OAuth2 APP页面路由
     path: '/oauth2-app',
@@ -362,21 +338,25 @@ export const constantRouterMap = [
     ]
   },
 
-  // {
-  //   path: '/test',
-  //   component: BlankLayout,
-  //   redirect: '/test/home',
-  //   children: [
-  //     {
-  //       path: 'home',
-  //       name: 'TestHome',
-  //       component: () => import('@/views/Home')
-  //     }
-  //   ]
-  // },
   {
     path: '/404',
     component: () => import(/* webpackChunkName: "fail" */ '@/views/exception/404')
   },
 
+
+  {
+    path: '/resume',
+    component: TabLayout,
+    redirect: '/resume/detail',
+    children: [
+      {
+        path: 'detail',
+        name: 'resumeDetail',
+        component: () => import(/* webpackChunkName: "user" */ '@/views/candidate/modules/CandidateFormCard'),
+        meta: {title: '简历详情'},
+        props: true,
+      },
+
+    ]
+  },
 ]

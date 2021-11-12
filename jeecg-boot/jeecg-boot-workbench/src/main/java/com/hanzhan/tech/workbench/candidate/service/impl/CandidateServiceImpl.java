@@ -85,17 +85,24 @@ public class CandidateServiceImpl extends ServiceImpl<CandidateMapper, Candidate
 		}
 	}
 
+
+	@Override
+	public Candidate getById(Serializable id) {
+		Candidate candidate = super.getById(id);
+		return candidate;
+	}
+
 	@Override
 	@Transactional
 	public void updateMain(Candidate candidate,List<CandidateCompanys> candidateCompanysList,List<CandidateVisithistory> candidateVisithistoryList,List<CandidateResume> candidateResumeList,List<CandidateEdu> candidateEduList) {
 		candidateMapper.updateById(candidate);
-		
+
 		//1.先删除子表数据
 //		candidateCompanysMapper.deleteByMainId(candidate.getId());
 //		candidateVisithistoryMapper.deleteByMainId(candidate.getId());
 //		candidateResumeMapper.deleteByMainId(candidate.getId());
 //		candidateEduMapper.deleteByMainId(candidate.getId());
-		
+
 		//2.子表数据重新插入
 		if(candidateCompanysList!=null && candidateCompanysList.size()>0) {
 			for(CandidateCompanys entity:candidateCompanysList) {

@@ -54,7 +54,7 @@
       </a-form>
     </div>
     <!-- 查询区域-END -->
-    
+
     <!-- 操作按钮区域 -->
     <div class="table-operator">
       <a-button @click="handleAdd" type="primary" icon="plus">新增</a-button>
@@ -121,6 +121,9 @@
             <a class="ant-dropdown-link">更多 <a-icon type="down" /></a>
             <a-menu slot="overlay">
               <a-menu-item>
+                <a @click="tabDetail(record)">tab详情</a>
+              </a-menu-item>
+              <a-menu-item>
                 <a @click="handleDetail(record)">详情</a>
               </a-menu-item>
               <a-menu-item>
@@ -131,7 +134,11 @@
             </a-menu>
           </a-dropdown>
         </span>
-
+        <div slot="tags" slot-scope="text, record">
+          <template v-for="tag in record.tags">
+            <a-tag color="red"> {{tag}} </a-tag>
+          </template>
+        </div>
       </a-table>
     </div>
 
@@ -227,7 +234,7 @@
           deleteBatch: "/candidate/candidate/deleteBatch",
           exportXlsUrl: "/candidate/candidate/exportXls",
           importExcelUrl: "candidate/candidate/importExcel",
-          
+
         },
         dictOptions:{},
         superFieldList:[],
@@ -239,10 +246,16 @@
     computed: {
       importExcelUrl: function(){
         return `${window._CONFIG['domianURL']}/${this.url.importExcelUrl}`;
+      },
+      tags(tagStr) {
+        return toStringJSON(tagStr)
       }
     },
     methods: {
       initDictConfig(){
+      },
+      tabDetail(recode) {
+        this.$router.push({name: 'resumeDetail', params:{itemId: recode.id}})
       },
       getSuperFieldList(){
         let fieldList=[];

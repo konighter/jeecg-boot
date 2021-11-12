@@ -1,0 +1,81 @@
+{
+  "data": {
+    "data": {
+      "name": "石宝琪",
+      "gender": null,
+      "genderName": null,
+      "degree": "69",
+      "degreeName": "硕士研究生",
+      "photoId": null,
+      "cityId": "001001",
+      "cityName": "北京市",
+      "interCode": "86",
+      "recommendRelation": null,
+      "recommendRelationName": null,
+      "recommendReason": null,
+      "interCodeName": "中国大陆",
+      "phone": "18801364860",
+      "email": "shibaoqi9458@163.com",
+      "birthday": 814688531547,
+      "workYear": "3",
+      "webSiteResumeId": null,
+      "selfPost": false,
+      "unionId": null,
+      "jobUnionIds": null,
+      "referenceAtsUnionId": null,
+      "age": 26,
+      "jobCategoryId": null,
+      "jobCategoryName": null,
+      "jobFamily": null,
+      "suggestLevelId": null,
+      "suggestLevelName": null,
+      "suggestLevelValue": 0,
+      "recommendJobId": null,
+      "recommendJobName": null,
+      "skills": [],
+      "workExp": [
+        {
+          "startDate": 1614528000000,
+          "endDate": 1627747200000,
+          "companyId": null,
+          "companyName": "北京明策智数科技有限公司",
+          "position": "java开发实习生",
+          "workDescription": "项目技术:springboot+redis+mysql+kafka",
+          "unionId": null
+        },
+        {
+          "startDate": 1530374400000,
+          "endDate": 1535731200000,
+          "companyId": null,
+          "companyName": "享知道(北京)科技有限公司",
+          "position": "软件测试实习生",
+          "workDescription": "熟悉公司的业务,根据需求文档分析模块间的逻辑,编写测试用例,执行用例\n发现bug后,和开发进行确认,确认后提交bug,开发修复后,在进行回归测试\n编写的用例全部执行完后,修复的bug进行回归测试后,写测试报告",
+          "unionId": null
+        }
+      ],
+      "eduExp": [
+        {
+          "startDate": 1567267200000,
+          "endDate": 1656604800000,
+          "school": "北京工业大学",
+          "major": "软件工程",
+          "degree": "69",
+          "degreeName": "硕士研究生",
+          "unionId": null
+        }
+      ],
+      "attachment": [
+        {
+          "name": "2021_10_12 11_06_37 - 石宝琪 硕士研究生 北京工业大学.pdf",
+          "fileId": "bole/temp/aed42b4d-2fb4-4358-bc0b-c6f0782ffdd31635229327661",
+          "unionId": null
+        }
+      ],
+      "customModuleList": null
+    },
+    "message": "解析成功！",
+    "msgType": null,
+    "errorCode": null
+  },
+  "status": 1
+}

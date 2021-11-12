@@ -34,14 +34,16 @@ public class Candidate implements Serializable {
 	@Excel(name = "姓名", width = 15)
     @ApiModelProperty(value = "姓名")
     private String name;
-	/**工作单位*/
-	@Excel(name = "工作单位", width = 15)
-    @ApiModelProperty(value = "工作单位")
-    private String company;
-	/**职位*/
-	@Excel(name = "职位", width = 15)
-    @ApiModelProperty(value = "职位")
-    private String job;
+    /**头像*/
+    @Excel(name = "头像", width = 128)
+    @ApiModelProperty(value = "头像")
+    private String avatar;
+
+    /**性别 male or female*/
+    @Excel(name = "性别", width = 15)
+    @ApiModelProperty(value = "性别")
+    private String gender;
+
 	/**电话号码*/
 	@Excel(name = "电话号码", width = 15)
     @ApiModelProperty(value = "电话号码")
@@ -50,6 +52,16 @@ public class Candidate implements Serializable {
 	@Excel(name = "邮箱", width = 15)
     @ApiModelProperty(value = "邮箱")
     private String email;
+
+    /**工作单位*/
+    @Excel(name = "工作单位", width = 15)
+    @ApiModelProperty(value = "工作单位")
+    private String company;
+
+    /**职位*/
+    @Excel(name = "职位", width = 15)
+    @ApiModelProperty(value = "职位")
+    private String job;
 	/**标签*/
 	@Excel(name = "标签", width = 15)
     @ApiModelProperty(value = "标签")
